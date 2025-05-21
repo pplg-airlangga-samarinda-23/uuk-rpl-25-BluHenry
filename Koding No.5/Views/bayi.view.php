@@ -121,8 +121,8 @@
                                     <td> <?= $item["Tinggi_badan"] ?></td>
                                     <td> <?= $item["Berat_badan"] ?></td>
                                     <td> 
-                                        <a href="Edit_barang.php?id=<?=$item['id']?>">  edit </a>
-                                        <a href="hapus_barang.php?id=<?=$item['id']?>" onclick="return confirm('Hapus data ini?')"> hapus </a>
+                                        <a href="Edit.php?id=<?=$item['id']?>">  edit </a>
+                                        <a href="hapus.php?id=<?=$item['id']?>" onclick="return confirm('Hapus data ini?')"> hapus </a>
                                     </td>
                                     <!-- <td> <a href="#"> edit </a> <a href="#">Hapus</a> </td> -->
                                 </tr>
