@@ -79,19 +79,19 @@
             <div class="container">
                 <div class="header">
                     <div class="Juding">                    
-                        <a href="settings.php"> <img class="seting" src="iconic.png"> </a>
+                        <a href="settings.admin.php"> <img class="seting" src="iconic.png"> </a>
                         
                     </div>
                     <h1> E-Posyandu </h1>
                     <div class="profile">
-                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> USER NPC </p>
-                        <img class="Fp" src="rrsgs.png">
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> USER ADMIN </p>
+                        <img class="Fp" src="BluAdmin.png">
                     </div>
                 </div>
                 <div class="UI_atas">
-                    <a class="kembali" href="dashboard.php"> <- kembali ke dashboard lite  </a>
-                    <h2> Data Bayi </h2>
-                    <a href="tambah.bayi.php"> Tambah data </a>
+                    <a class="kembali" href="dashboard.admin.php"> <- kembali ke dashboard Admin  </a>
+                    <h2> Data kader </h2>
+                    <a href="tambah.kader.php"> Tambah data </a>
                 </div>
 
                 <div>
@@ -101,8 +101,8 @@
                                     <th> id </th>
                                     <th> Nama </th>
                                     <th> jenis kelamin </th>
-                                    <th> Tinggi badan </th>
-                                    <th> Berat badan </th>
+                                    <th> umur </th>
+                                    <th> id_anggota </th>
                                     <th> edit / hapus </th>
                                </tr>
                              </thead>
@@ -118,11 +118,11 @@
                                     <td> <?= $no; ?></td>
                                     <td> <?= $item["Nama"] ?></td>
                                     <td> <?= $item["Jenis_kelamin"] ?></td>
-                                    <td> <?= $item["Tinggi_badan"] ?></td>
-                                    <td> <?= $item["Berat_badan"] ?></td>
+                                    <td> <?= $item["Umur"] ?></td>
+                                    <td> <?= $item["id_anggota"] ?></td>
                                     <td> 
-                                        <a href="edit.php?id=<?=$item['id']?>">  edit </a>
-                                        <a href="hapus.php?id=<?=$item['id']?>" onclick="return confirm('Hapus data ini?')"> hapus </a>
+                                        <a href="edit.kader.php?id=<?=$item['id']?>">  edit </a>
+                                        <a href="hapus.kader.php?id=<?=$item['id']?>" onclick="return confirm('Hapus data ini?')"> hapus </a>
                                     </td>
                                     <!-- <td> <a href="#"> edit </a> <a href="#">Hapus</a> </td> -->
                                 </tr>

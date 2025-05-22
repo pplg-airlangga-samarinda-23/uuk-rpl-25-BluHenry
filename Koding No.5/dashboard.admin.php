@@ -57,9 +57,13 @@ require 'koneksi.php';
                 
                 
             }
-                        .seting:hover {
+            .seting:hover {
                 width: 60px;
                 transition: 0.5s;
+            }
+
+            .bayi {
+                padding: 10px;
             }
         </style>
     </head>
@@ -81,7 +85,8 @@ require 'koneksi.php';
 
                 <div class="Budy">
                     <h2 > Admin Dashboard </h2>
-                    <a class="bayi" href="bayi.php"> Data Bayi </a>
+                    <a class="bayi" href="bayi.admin.php"> Data Bayi </a>
+                    <a class="bayi" href="kader.php"> Data Kader </a>
                 </div>
             </div>
        
